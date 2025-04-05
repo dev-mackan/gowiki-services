@@ -1,0 +1,33 @@
+
+{{ $title := .Page.DisplayTitle }}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/css/style.css" rel="stylesheet">
+        <title>Gowiki - {{ $title }}</title>
+    </head>
+    <body>
+        <header>
+        </header>
+        <nav>
+            <a href="/pages">[Home]</a>
+            <a href="/pages/{{ .Page.Title }}/revisions/{{ .Revision.RevId }}/raw.md">[Markdown]</a>
+            <a href="/pages/{{ .Page.Title }}/revisions">[Revisions]</a>
+            <a href="/pages/{{ .Page.Title }}/edit">[Edit]</a>
+            <a href="/pages/{{ .Page.Title }}/delete">[Delete]</a>
+            <h2>{{ $title }}</h2>
+        </nav>
+        <main>
+            {{ .Text.Content }}
+        </main>
+        <br>
+        <footer>
+            <span id="db-info">
+            Page:{{ .Page.PageId }} Revision:{{ .Revision.RevId }} Text:{{ .Text.TextId }}
+            </span>
+        </footer>
+    </body>
+
+</html>

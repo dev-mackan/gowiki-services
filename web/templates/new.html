@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/css/style.css" rel="stylesheet">
+        <title>New page</title>
+    </head>
+    <body>
+        <h1>New Page</h1>
+        <form method="post" enctype="multipart/form-data">
+            <br>
+            <br>
+            <label for="page_title">Title:</label>
+            <input type="text" id="page_title" name="page_title">
+            <br>
+            <br>
+            <label for="content">Markdown file:</label>
+            <input type="file" id="content" name="content" accept=".md"><br><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

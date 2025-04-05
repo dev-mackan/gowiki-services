@@ -1,0 +1,28 @@
+
+body {
+    background: #1c1c1c;
+    font-family:monospace;
+    color: white;
+}
+
+p, h1 ,h2 ,h3 {
+    max-width: 1000px;
+}
+
+a:link {
+  color: CornflowerBlue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: DarkGrey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/css/style.css" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <a href="/pages/new">[New]</a>
+        </header>
+        <br>
+        <main>
+        {{ range .}} 
+            <a href="pages/{{ .Title }}">{{ .DisplayTitle }}</a>
+        {{ end }}
+        </main>
+    </body>
+</html>
